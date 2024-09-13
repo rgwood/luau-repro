@@ -5,4 +5,4 @@ edition = "2021"
 
 [dependencies]
 anyhow = "1.0.88"
-mlua = { version = "0.9.9", features = ["luau"]}
+mlua = { version = "0.9.9", features = ["luau", "vendored"] }

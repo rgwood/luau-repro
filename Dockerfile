@@ -4,7 +4,7 @@ FROM rust:1.75-alpine
 WORKDIR /usr/src/myapp
 
 # Install necessary dependencies
-RUN apk add --no-cache musl-dev
+RUN apk add --no-cache musl-dev g++ make
 
 # Add the MUSL target
 RUN rustup target add x86_64-unknown-linux-musl

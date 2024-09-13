@@ -1,4 +1,4 @@
-FROM rust:1.75-alpine
+FROM rust:1.81-alpine
 
 # Set the working directory inside the container
 WORKDIR /usr/src/myapp

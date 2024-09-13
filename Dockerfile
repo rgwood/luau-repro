@@ -24,8 +24,8 @@ RUN curl -L https://musl.cc/x86_64-linux-musl-native.tgz | tar -xz -C /usr/local
 
 # RUN cp /usr/local/bin/x86_64-linux-musl-g++ /usr/local/bin/musl-g++
 
-ENV CC=/usr/local/bin/x86_64-linux-musl-cc
-ENV CXX=/usr/local/bin/x86_64-linux-musl-g++
+# ENV CC=/usr/local/bin/x86_64-linux-musl-cc
+# ENV CXX=/usr/local/bin/x86_64-linux-musl-g++
 
 # Specify the command to run the application
 CMD ["cargo", "build", "--target=x86_64-unknown-linux-musl"]
